@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    width: 300px;
+    height: 300px;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: 600% 600%;
+    background-image: url('img/bluebg.gif');
+    -webkit-animations: movingBackground 59s ease infinite;
+    -moz-animation: movingBackground 59s ease infinite;
+    -o-animation: movingBackground 59s ease infinite;
+    animation: movingBackground 59s ease infinite;
+    -webkit-box-shadow: 0px 0px 5px 2px #0008ff;
+    box-shadow: 0px 0px 5px 2px #0008ff;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.invaders{
+    background-image: url("img/blue.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.spaceship{
+    background-image: url("img/spaceship-blue.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.laser{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 2px #0400ff;
+    width: 2px!important;
+    height: 6px!important;
+    margin: 7px 9px;
+    -webkit-box-shadow: 0px 0px 5px 2px #0d00ff; 
+}
+
+.boom{
+    background-image: url("img/boom.png");
+    background-size: cover;
+    background-position: center;
+}
+
+@-webkit-keyframes movingBackground {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes movingBackground {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-o-keyframes movingBackground {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes movingBackground {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+
+.font{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 0 0 4px #1500ff, 0px 0px 10px rgb(255 0 0 / 0%);
+}
+h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+small{
+    color: white;
+    font-family: monospace;
+}
